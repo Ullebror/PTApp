@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import Error from '.component/Error';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Customerlist from './components/Customerlist.jsx';
@@ -12,7 +11,6 @@ const router = createBrowserRouter([
   {
   path: "/PTApp/",
   element: <App />,
-  errorElement: <Error />,
   children: [
     {
       element: <Customerlist />,

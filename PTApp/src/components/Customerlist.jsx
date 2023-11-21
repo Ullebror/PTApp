@@ -1,7 +1,6 @@
-import React, {
+import  {
     useState,
     useEffect,
-    useCallback,
     useMemo,
     useRef,
      } from 'react';
@@ -141,9 +140,9 @@ function Customerlist() {
         columnKeys: ['firstname','lastname,','streetaddress','postcode', 'city','email','phone'],
         fileName: "Customers.csv"
     }
-    const exportCSV = useCallback(() => {
+    const exportCSV = () => {
         gridRef.current.api.exportDataAsCsv(paramsCsv);
-      }, []);
+      };
 
     return(
         <>

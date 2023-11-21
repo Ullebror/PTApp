@@ -2,6 +2,7 @@
   "name": "ptapp",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://ullebror.github.io/PTApp/",
   "type": "module",
   "scripts": {
     "dev": "vite",
